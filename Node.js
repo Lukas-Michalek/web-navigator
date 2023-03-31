@@ -8,7 +8,7 @@ class Node{
     if(!(node instanceof Node)){
       throw new Error('Node must be a member of Node class');
     }
-    this.next(node);
+    this.next = node;
   }
 
   setNext(data){
