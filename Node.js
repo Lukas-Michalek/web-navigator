@@ -5,7 +5,7 @@ class Node{
   }
 
   setNextNode(node){
-    if(!(node instanceOf Node)){
+    if(!(node instanceof Node)){
       throw new Error('Node must be a member of Node class');
     }
     this.next(node);
@@ -19,5 +19,7 @@ class Node{
     return this.next;
   }
 
-  module.exports = Node;
+
 }
+
+module.exports = Node;
